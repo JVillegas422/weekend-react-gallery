@@ -31,6 +31,13 @@ function GalleryItem({displayImage, addLike}) {
                         onClick={handleLikes}>
                         Like
                     </button>
+                        {(likeImage > 0) ?
+                    <h4>
+                        {likeImage} People love this!
+                    </h4> : 
+                    <h3>
+                        Be the first to like this!
+                    </h3>}
                 </div>
             </div>            
         </>

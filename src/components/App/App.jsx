@@ -11,7 +11,7 @@ function App() {
     getGalleryList();
   }, [])
 
-  function getGalleryList() {
+  const getGalleryList = () => {
     axios({
       method: 'GET',
       url: '/gallery'
@@ -24,6 +24,19 @@ function App() {
     });
   }
 
+  const addLike = () => {
+    axios({
+      method: 'PUT',
+      url: '/gallery/like/:id'
+    })
+    .then(() => {
+      console.log('addLikes');
+    })
+    .catch((err) => {
+      console.log('Something went wrong with addLikes', err);
+    });
+  }
+
     return (
       <div className="App">
         <header className="App-header">
@@ -31,8 +44,8 @@ function App() {
         </header>
         <GalleryList 
           galleryItems={galleryList}
+          addLike={addLike}
         />
-        <img src="images/goat_small.jpg"/>
       </div>
     );
 }

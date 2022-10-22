@@ -1,13 +1,14 @@
 import GalleryItem from "../GalleryItem/GalleryItem";
+import React from "react";
 
-function GalleryList([galleryItems]) {
-    console.log('in GalleryList.jsx', galleryItems);
+function GalleryList({gallary}) {
+    console.log('in GalleryList.jsx', gallary);
     
     return (
         <>
             <h2>GalleryList</h2>
-            <div>
-                {galleryItems.map(imgs => 
+            <div className={'gallaryList'}>
+                {gallary.map(imgs => 
                     (<GalleryItem
                         key={imgs.id}
                         imgs={imgs}

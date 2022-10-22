@@ -21,7 +21,9 @@ function GalleryItem({displayImage, addLike}) {
         <>
             <div className={'allImages'}>
                 <div onClick={handleClick}>
-                    {showDescription ? <img src={displayImage.path}></img> : <h3>{displayImage.description}</h3>}
+                    {showDescription ? 
+                    <img src={displayImage.path}></img> : 
+                    <h3>{displayImage.description}</h3>}
                 </div>
 
                 <div className={'buttons'}>
@@ -31,13 +33,9 @@ function GalleryItem({displayImage, addLike}) {
                         onClick={handleLikes}>
                         Like
                     </button>
-                        {(likeImage > 0) ?
-                    <h4>
-                        {likeImage} People love this!
-                    </h4> : 
-                    <h3>
-                        Be the first to like this!
-                    </h3>}
+                    {(likeImage > 0) ?
+                    <h4>{likeImage} People love this!</h4> : 
+                    <h3>Be the first to like this!</h3>}
                 </div>
             </div>            
         </>

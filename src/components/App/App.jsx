@@ -5,7 +5,7 @@ import GalleryList from '../GalleryList/GalleryList';
 import GalleryItem from '../GalleryItem/GalleryItem';
 
 function App() {
-  const [gallaryList, setGalleryList] = useState([]);
+  const [galleryList, setGalleryList] = useState([]);
 
   useEffect(() => {
     getGalleryList();
@@ -29,7 +29,9 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <GalleryList />
+        <GalleryList 
+          galleryList={galleryList}
+        />
         <img src="images/goat_small.jpg"/>
       </div>
     );

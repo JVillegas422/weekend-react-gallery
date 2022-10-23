@@ -6,7 +6,7 @@ function GalleryList({galleryItems, addLike}) {
     
     return (
         <>
-            <h2>GalleryList</h2>
+            <h2 className="memeHeader">MemeList</h2>
             <div className={'gallaryList'}>
                 {galleryItems.map(imgs => 
                     (<GalleryItem

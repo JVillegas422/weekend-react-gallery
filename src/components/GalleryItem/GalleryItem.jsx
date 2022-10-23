@@ -28,6 +28,7 @@ function GalleryItem({displayImage, addLike}) {
 
                 <div className={'buttons'}>
                     <button 
+                        className='likeBtn'
                         id={displayImage.id}
                         likes={displayImage.likes}
                         onClick={handleLikes}>

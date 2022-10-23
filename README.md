@@ -10,7 +10,7 @@ _Duration: 6 hours_
 This project utilize React and allows you to add likes to an images(memes) and toggle between the image &image description when clicked. 
 
 ## Screen Shot
-![Weekend React Gallery](public/images/ReactGallery.jpg)
+![Weekend React Gallery](public/images/react_gallery.jpg)
 
 ## Prerequisites 
 

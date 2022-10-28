@@ -11,10 +11,9 @@ function GalleryItem({displayImage, addLike}) {
 
     const handleLikes = (evt) => {
         evt.preventDefault();
-
-        addLike(evt.target.id);
         setLikeImage(likeImage + 1);
-        displayImage.likes = likeImage;
+        // addLike(evt.target.id);
+        // displayImage.likes = likeImage;
     }
 
     return (

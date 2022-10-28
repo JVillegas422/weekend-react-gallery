@@ -24,10 +24,10 @@ function App() {
     });
   }
 
-  const addLike = () => {
+  const addLike = (id) => {
     axios({
       method: 'PUT',
-      url: '/gallery/like/:id'
+      url: `/gallery/${id}`
     })
     .then(() => {
       console.log('addLikes');
